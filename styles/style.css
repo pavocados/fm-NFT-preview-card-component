@@ -18,11 +18,34 @@ body {
     border-radius: 0.925rem;
 }
 
-.image {
+.image-container {
     max-width: 17.5rem;
     padding: 1.5rem;
-    border-radius: 2rem;
+    position:relative;
 }
+
+.image {
+    border-radius: 0.5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 1.5rem;
+    bottom: 0;
+    left: 1.5rem;
+    right: 0;
+    width: 17.5rem;
+    height: 17.5rem;
+    opacity: 0;
+    transition: .25s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 0.5rem;
+}
+
+.image-container:hover .overlay {
+    opacity:0.5;
+}
+
 
 .all-info-container {
     max-width: 17.5rem;
@@ -34,7 +57,14 @@ body {
     font-size: 1.4rem;
     color:white;
     padding-bottom:0.8rem;
+    cursor:pointer;
+    transition: 0.25s;
 }
+
+.title:hover, .title:active {
+    color:hsl(178, 100%, 50%);
+}
+
 
 .information {
     font-size: 1rem;
@@ -78,8 +108,8 @@ body {
     align-items: center;
     column-gap: 0.8rem;
     padding-bottom:1.5rem;
-    
 }
+
 .avatar {
     width: 2rem;
     border-radius:50%;
@@ -96,6 +126,11 @@ body {
 .author-name {
     color:white;
 }
+
+.author-name:hover, .author-name:active {
+    color: hsl(178, 100%, 50%)
+}
+
 .attribution {
     text-align:center;
     font-size: 0.5rem;
@@ -107,5 +142,10 @@ body {
 }
 a {
     text-decoration: none;
-    color:hsl(215, 51%, 70%)
+    color:hsl(215, 51%, 70%);
+    transition: 0.25s;
+}
+
+a:hover, a:active {
+    color:hsl(178, 100%, 50%)
 }
