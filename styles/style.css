@@ -1,0 +1,111 @@
+* {
+    font-family: outfit;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    justify-content: center;
+}
+
+.main-container {
+    background-color: hsl(216, 50%, 16%);
+    width: 20.5rem;
+    max-width: 20.5rem;
+    margin-inline:auto;
+    border-radius: 0.925rem;
+}
+
+.image {
+    max-width: 17.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.all-info-container {
+    max-width: 17.5rem;
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    color:white;
+    padding-bottom:0.8rem;
+}
+
+.information {
+    font-size: 1rem;
+    color: hsl(215, 51%, 70%);
+    padding-bottom:1rem;
+}
+
+.columns {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom:1rem;
+
+}
+.number, .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.eth {
+    color: hsl(178, 100%, 50%);
+    padding-left:0.5rem;
+    font-size: 1rem;
+}
+
+.days-left {
+    color: hsl(215, 51%, 70%);
+    padding-left:0.5rem;
+    font-size: 1rem;
+}
+
+.line {
+    border:solid 1px hsl(215, 32%, 27%);
+    margin-bottom:1rem;
+
+}
+.author {
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    align-items: center;
+    column-gap: 0.8rem;
+    padding-bottom:1.5rem;
+    
+}
+.avatar {
+    width: 2rem;
+    border-radius:50%;
+    border:solid 1px white;
+    
+}
+
+.creation-by {
+    font-size: 0.925rem;
+    color: hsl(215, 51%, 70%);
+    
+}
+
+.author-name {
+    color:white;
+}
+.attribution {
+    text-align:center;
+    font-size: 0.5rem;
+}
+
+.attribution {
+    color:hsl(215, 51%, 70%);
+    padding:1rem;
+}
+a {
+    text-decoration: none;
+    color:hsl(215, 51%, 70%)
+}
